@@ -27,3 +27,20 @@ Using Keras, we developed a simple neural network to analyze transaction pattern
 
 Integration between Java and Python:
 Communication between the Java system and the Python AI model was carried out via REST API. Java sends transactions to the Flask server, which processes the data using the neural network and returns whether the transaction is suspected of fraud.
+
+How It Was Done:
+
+Back-End Development in Java:
+The banking system was implemented in Java, ensuring high performance and security for financial operations. Classes such as ContaBancaria and Banco were created to manage accounts and transactions.
+
+AI Model Creation in Python:
+Using Keras, we developed a simple neural network to analyze transaction patterns and identify potential fraud. The model was trained with simulated data and then implemented in a Flask API.
+
+Integration between Java and Python:
+Communication between the Java system and the Python AI model was carried out via REST API. Java sends transactions to the Flask server, which processes the data using the neural network and returns whether the transaction is suspected of fraud.
+
+Packaging and Distribution:
+PyInstaller was used to turn the Python script into an executable, while Launch4j packaged the Java code into another executable. Finally, both were combined into a single installer using Inno Setup, making software distribution and installation easier.
+
+Conclusion:
+The result is a functional, independent system that can be installed and run on any Windows computer. The combination of Java and Python offers a robust solution for banking management with fraud detection, taking advantage of the best of each technology.
